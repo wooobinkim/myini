@@ -16,9 +16,9 @@
 
 <img src="asset/apikey1.png" width="70%" height="70%"/>
 
-<img src="asset/apikey2.png" width="70%" height="70%"/>
+<img src="asset/apikey2.PNG" width="70%" height="70%"/>
 
-<img src="asset/domain.png" width="70%" height="70%"/>
+<img src="asset/domain1.png" width="70%" height="70%"/>
 
 ### 3. 요구사항 명세서 - 지라 스토리 매핑사항
 
