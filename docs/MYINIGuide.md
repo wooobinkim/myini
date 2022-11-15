@@ -8,18 +8,17 @@
 
 ### 1. 지라이메일 등록
 
-![account1](asset/account1.png)
+<img src="asset/account1.png" width="70%" height="70%"/>
 
-![account2](asset/account2.png)
+<img src="asset/account2.png" width="70%" height="70%"/>
 
 ### 2. 프로젝트의 연동
 
-![api등록1.PNG](asset/apikey1.png)
+<img src="asset/apikey1.png" width="70%" height="70%"/>
 
-![api등록2.PNG](assetc/apikey2.png)
+<img src="asset/apikey2.png" width="70%" height="70%"/>
 
-
-![domain](asset/domain.png)
+<img src="asset/domain.png" width="70%" height="70%"/>
 
 ### 3. 요구사항 명세서 - 지라 스토리 매핑사항
 
@@ -48,29 +47,28 @@
 - 우클릭 후 “New Table”을 클릭해 테이블 생성
 - Pascal Case로 테이블명 작성
 
-  ![테이블.PNG](asset/table.png)
+<img src="asset/table.png" width="70%" height="70%"/>
 
 
 ### 2. 컬럼
 
 - Snake Case로 컬럼명 작성
 
-![column](asset/column.png)
+<img src="asset/column.png" width="70%" height="70%"/>
 
 ### 3. 제약조건
 
 - Not Null, Unique, Default, Auto Increment 제공
 - 우클릭 후 “Primary Key”를 클릭해 PK 지정
 
-![constraint](asset/constraint.png)
+<img src="asset/constraint.png" width="70%" height="70%"/>
 
 ### 4. 연관관계
 
 - 우클릭 후 “Relationship”를 클릭해 연관관계 설정
 - 연관짓는 테이블과 연관되는 테이블 클릭 후 관계설정
 
-![relation](asset/relation.png)
-
+<img src="asset/relation.png" width="70%" height="70%"/>
 
 💡 **더 자세한 이용방법은 [vuerd](https://github.com/vuerd/vuerd)에서 찾아보실 수 있습니다. (일부 기능 변형되어 다를 수 있음)**
 
