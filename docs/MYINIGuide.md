@@ -96,7 +96,7 @@ ex) user_info_id
 
 각 기능별로 API가 생성될 수 있도록 API Controller를 생성합니다. 이를 토대로 Controller.java가 생성됩니다.
 
-<img src="asset/apicontroller.PNG" width="70%" height="70%"/>
+<img src="asset/apicontroller.PNG" width="20%" height="20%"/>
 
 ```bash
 💡 API Controller는 Pascal Case로 작성해주세요.   
@@ -119,7 +119,7 @@ ex) updateUser
 
 ResponseDTO에서 변수로 쓰일 객체형 DTO는 자료형 관리에서 생성할 수 있습니다.
 
-<img src="asset/apicustomdto.PNG" width="70%" height="70%"/>
+<img src="asset/customdto.PNG" width="20%" height="20%"/>
 
 ```bash
 💡 DTO 명을 타 DTO와 동일하게 생성하거나, DTO 내부의 변수를 등록하지 않으면 빌드 시 에러가 날 수 있습니다.
