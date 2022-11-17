@@ -8,11 +8,15 @@
 
 ### 1. 지라이메일 등록
 
+- Jira 계정관리에서 프로필 표시를 **공개**로 설정해주세요.
+
 <img src="asset/account1.png" width="70%" height="70%"/>
 
 <img src="asset/account2.png" width="70%" height="70%"/>
 
 ### 2. 프로젝트의 연동
+
+- Jira 계정관리에서 **JIRA API**키를 발급받고 **JIRA ID**, **JIRA Domain**과 함께 MYINI에 등록해주세요.
 
 <img src="asset/apikey1.png" width="70%" height="70%"/>
 
@@ -37,7 +41,7 @@
 
 서비스 요구사항 기획에 따라 E-R Diagram(개체-관계 다이어그램)을 생성할 수 있습니다.
 
-만들어진 ERD정보를 바탕으로  해당 프로젝트의 Domain(Entity, Repository)이 생성됩니다.
+만들어진 ERD정보를 바탕으로 해당 프로젝트의 Domain(Entity, Repository)이 생성됩니다.
 
 **💡 myINI는 프로젝트를 이니셜라이징 할 때, Database는 MySQL과 JPA를 기준으로 생성됩니다.**
 
@@ -45,16 +49,24 @@
 ### 1. 테이블
 
 - 우클릭 후 “New Table”을 클릭해 테이블 생성
-- Pascal Case로 테이블명 작성
 
 <img src="asset/table.png" width="70%" height="70%"/>
 
+```bash
+💡 테이블명은 Pascal Case로 작성해주세요.
+ex) UserInfo
+```
 
 ### 2. 컬럼
 
-- Snake Case로 컬럼명 작성
+- 더블클릭해 컬럼명 작성
 
 <img src="asset/column.png" width="70%" height="70%"/>
+
+```bash
+💡 컬럼명은 Snake Case로 작성해주세요
+ex) user_info_id
+```
 
 ### 3. 제약조건
 
@@ -84,47 +96,33 @@
 
 각 기능별로 API가 생성될 수 있도록 API Controller를 생성합니다. 이를 토대로 Controller.java가 생성됩니다.
 
-(화면 캡쳐)
+<img src="asset/apicontroller.png" width="70%" height="70%"/>
 
 ```bash
-💡 API Controller의 이름이 Controller.java의 이름으로 생성됩니다.   
-(예시) userController.java
-
-(유저컨트롤러 이미지)
+💡 API Controller는 Pascal Case로 작성해주세요.   
+ex) userController.java
 ```
 
-```bash
-📌 `MethodName`을 바탕으로 메소드가 생성되니, `MethodName`은 **Camel Case** 형식으로 작성해주세요
-```
 
 ### 2. API 생성
 
-기능에 필요한 API를 생성합니다. API별로 각각의 method가 생성됩니다.
+- 기능에 필요한 API를 생성합니다. API별로 각각의 method가 생성됩니다.
 
-(API 정보 입력 화면 캡쳐)
+<img src="asset/apicontext.png" width="70%" height="70%"/>
 
-### 3. API에 요구되는 Pathvariable, Querystring, Request / ResponseDTO들을 생성합니다.
+```bash
+💡 MethodName은 Camel Case로 작성해주세요.
+ex) updateUser
+```
 
-- Pathvariable과 Querystring은 API URL에 적용됩니다.
-
-(Pathvariable Querystring 생성 화면 캡쳐)
-
-- RequestBody ResponseBody는 생성될 API의 DTO로 생성됩니다.
-
-(RequestBody ResponseBody 생성화면 캡쳐)
-
-Response/Request DTO의 이름은 해당 `API 메서드 명 + Request/Response` 로 자동으로 생성됩니다.
-
-### 4. 사용자 정의 클래스 타입이 필요하다면 DTO를 생성할 수 있습니다.
+### 3. 사용자 정의 클래스 타입이 필요하다면 DTO를 생성할 수 있습니다.
 
 ResponseDTO에서 변수로 쓰일 객체형 DTO는 자료형 관리에서 생성할 수 있습니다.
 
-(화면 캡쳐)
-
+<img src="asset/apicustomdto.png" width="70%" height="70%"/>
 
 ```bash
-📌 주의사항 
-DTO 명을 타 DTO와 동일하게 생성하거나, DTO 내부의 변수를 등록하지 않으면 빌드 시 에러가 날 수 있습니다.
+💡 DTO 명을 타 DTO와 동일하게 생성하거나, DTO 내부의 변수를 등록하지 않으면 빌드 시 에러가 날 수 있습니다.
 ```
 ---
 
